@@ -3,10 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyCoffeeApp.Views.CoffeeEquipmentPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="This is the Equipement Page"
+        <StackLayout> 
+            <Label x:Name="lblEquipment" Text="This is the Equipement Page"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            
+            <Button x:Name="btnClick"
+                    Text="Click me !!"
+                    Clicked="btnClick_Clicked"/>
+            
         </StackLayout>
+        
+        
+        
     </ContentPage.Content>
 </ContentPage>

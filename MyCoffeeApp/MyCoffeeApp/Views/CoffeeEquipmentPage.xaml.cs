@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace MyCoffeeApp.Views
@@ -16,5 +10,15 @@ namespace MyCoffeeApp.Views
         {
             InitializeComponent();
         }
+        int count = 0;
+        private void btnClick_Clicked(object sender, System.EventArgs e)
+        {
+            count++;
+            lblEquipment.Text = $"Uou have clicked me {count} times";
+;
+        }
+        
+
+        
     }
 }
